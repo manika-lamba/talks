@@ -67,6 +67,7 @@ dl <- cranlogs::cran_downloads("palmerpenguins",
 saveRDS(dl, file = "data/cran-downloads.RDS") 
 ```
 
+
 ## About Me
 
 ::: columns
@@ -295,3 +296,4 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 # Demo! {background-color="#F7D9C4"}
 
 # ![](slide1.png){fig-align="center"} {background-color="#F7D9C4"}
+
