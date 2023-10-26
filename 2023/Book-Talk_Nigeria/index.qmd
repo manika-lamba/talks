@@ -1,0 +1,126 @@
+---
+title: "Topic Modeling"
+subtitle: |
+      | Week 11 Lecture notes
+      | IS 505 Information Organization and Access
+      | Fall 2023
+author:
+  - Dr. Manika Lamba
+institute: |
+      | Postdoctoral Research Associate
+      | School of Information Sciences
+      | University of Illinois at Urbana-Champaign
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+format: 
+  revealjs:
+    multiplex: true
+    footer: "[apreshill.github.io/palmerpenguins-useR-2022/](https://apreshill.github.io/palmerpenguins-useR-2022/)"
+    theme: ["pp.scss"]
+    slide-number: c/t
+    incremental: true
+    title-slide-attributes:
+      data-background-image: img/cover.jpeg
+      data-background-size: cover  
+editor: visual
+---
+
+```{r setup}
+#| include: false
+
+library(palmerpenguins)
+
+# for interactive plots
+library(ggiraph)
+library(patchwork)
+library(shadowtext)
+
+# for color
+library(paletteer)
+
+# for cran plots
+library(cranlogs)
+library(tidyverse)
+library(scales)
+
+# for fonts
+library(showtext)
+font_add_google("Jost", "Jost")
+showtext_auto()
+theme_set(theme_minimal(base_family = "Jost"))
+
+library(recipes)
+library(broom)
+# for reporting cran downloads
+start_date <- "2020-07-23"
+end_date <- "2022-06-15"
+```
+
+```{r}
+#| eval: false
+#| include: false
+# do this just once
+dl <- cranlogs::cran_downloads("palmerpenguins",
+                               from = start_date,
+                               to = end_date) %>% 
+  as_tibble() 
+saveRDS(dl, file = "data/cran-downloads.RDS") 
+```
+
+# What is Topic Modeling? {background-color="#F7D9C4"}
+
+## Definition
+
+***Topic Modeling***
+
+-   It is "a method for finding and tracing clusters of words (called *topics*) in large bodies of texts" (Brett)
+-   It is a text mining approach to understand, organize, process, extract, manage, and summarize knowledge
+
+***Topic***
+
+-   It is "a recurring pattern of co-occurring words" (Brett)
+-   A topic can be defined as the main idea discussed in a text, i.e., the theme or subject of different granularity
+-   Topics are simply groups of words from the collection of documents that represents the information in the collection in the best way
+
+## Introduction 
+
+- It makes an excellent tool for discovery and helps to uncover evidence
+already present in the text
+- It has been called an act of reading tea leaves (Chang et al., 2009) or the process of highlighting words (Brett) based on their topics
+- It is based on statistical and machine learning techniques to mine meaningful information from a vast corpus of unstructured data and is used to mine document’s content
+- There are no machine-readable annotations that can tell the topic modeling programs about the semantic meaning of the words in the text
+
+
+## What Happens in Topic Modeling?
+
+![](img/background.jpeg){fig-align="center" width="65%"}
+
+- It infers abstract topics based on “similar patterns of word usage in each document”
+- These topics are simply groups of words from the collection of documents that represents the information in the collection in the best way
+
+
+
+## How Topic Modeling Works?
+![](img/works.png){fig-align="center"}
+
+## How Topic Modeling Works? (Cont.)
+
+![](img/works2.png){fig-align="center"}
+
+
+## When to Use Topic Modeling
+
+- When you have a vast collection of text documents
+- When the collection belongs to a specific subject
+- When the collection has a similar type of documents, such as when all files in the collection are newspaper articles
+
+## When NOT to Use Topic Modeling
+- When you have a relatively small number of documents
+- When you do not have any idea about your collection. In this case, clustering will be a better option than using topic modeling
+- When the collection has a mixture of different types of documents, such as when the collection is composed of newspaper archives, journal articles, and ETDs
+
+
+
+
+
+# ![](slide1.png){fig-align="center"} {background-color="#F7D9C4"}

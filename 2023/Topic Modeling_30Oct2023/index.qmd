@@ -1,0 +1,258 @@
+---
+title: "Topic Modeling"
+subtitle: |
+      | Week 11 Lecture notes
+      | IS 505 Information Organization and Access
+      | Fall 2023
+author:
+  - Dr. Manika Lamba
+institute: |
+      | Postdoctoral Research Associate
+      | School of Information Sciences
+      | University of Illinois at Urbana-Champaign
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+format: 
+  revealjs:
+    multiplex: true
+    footer: "[manika-lamba.github.io/talks/topic-modeling]()"
+    theme: ["pp.scss"]
+    slide-number: c/t
+    incremental: false
+    title-slide-attributes:
+      data-background-image: img/cover.jpeg
+      data-background-size: cover  
+editor: visual
+---
+
+```{r setup}
+#| include: false
+
+library(palmerpenguins)
+
+# for interactive plots
+library(ggiraph)
+library(patchwork)
+library(shadowtext)
+
+# for color
+library(paletteer)
+
+# for cran plots
+library(cranlogs)
+library(tidyverse)
+library(scales)
+
+# for fonts
+library(showtext)
+font_add_google("Jost", "Jost")
+showtext_auto()
+theme_set(theme_minimal(base_family = "Jost"))
+
+library(recipes)
+library(broom)
+# for reporting cran downloads
+start_date <- "2020-07-23"
+end_date <- "2022-06-15"
+```
+
+```{r}
+#| eval: false
+#| include: false
+# do this just once
+dl <- cranlogs::cran_downloads("palmerpenguins",
+                               from = start_date,
+                               to = end_date) %>% 
+  as_tibble() 
+saveRDS(dl, file = "data/cran-downloads.RDS") 
+```
+
+## About Me
+
+::: columns
+::: {.column width="50%"}
+![](img/me.jpg){width="70%"}
+
+:::
+::: {.column width="50%"} 
+- [Personal Website](https://manika-lamba.github.io/)
+- PhD, MPhil, MLIS, MS, BS (H)
+- Research Interests:
+    - Computational Social Science
+    - Health & Social Informatics
+    - Science of Science/Metascience
+        - Text as Data
+        - Social Representation
+        - Policy
+  
+:::
+:::
+
+# What is Topic Modeling? {background-color="#F7D9C4"}
+
+## Definition
+
+::: {.incremental}
+
+***Topic Modeling***
+
+-   It is "a method for finding and tracing clusters of words (called *topics*) in large bodies of texts" (Brett)
+-   It is a text mining approach to understand, organize, process, extract, manage, and summarize knowledge
+
+***Topic***
+
+-   It is "a recurring pattern of co-occurring words" (Brett)
+-   A topic can be defined as the main idea discussed in a text, i.e., the theme or subject of different granularity
+-   Topics are simply groups of words from the collection of documents that represents the information in the collection in the best way
+:::
+
+## Introduction
+
+:::{.incremental}
+
+- It performs *soft clustering*, where it presumes that every document is composed of a mixture of topics
+- It makes an excellent tool for discovery and helps to uncover evidence
+already present in the text
+- It has been called an act of reading tea leaves (Chang et al., 2009) or the process of highlighting words (Brett) based on their topics
+- It is based on statistical and machine learning techniques to mine meaningful information from a vast corpus of unstructured data and is used to mine document’s content
+- There are no machine-readable annotations that can tell the topic modeling programs about the semantic meaning of the words in the text
+:::
+
+## What Happens in Topic Modeling?
+
+![](img/background.jpeg){fig-align="center" width="65%"}
+
+:::{.incremental}
+
+- It infers abstract topics based on “similar patterns of word usage in each document”
+- These topics are simply groups of words from the collection of documents that represents the information in the collection in the best way
+:::
+
+## How Topic Modeling Works?
+![](img/works.png){fig-align="center"}
+
+## How Topic Modeling Works? (Cont.)\
+
+![](img/works2.png){fig-align="center"}
+
+## How Topic Modeling Works? (Cont.)
+
+![](img/works3.png){fig-align="center"}
+
+## How to DO Topic Modeling?
+
+:::{.incremental}
+1. Extract/Retrieve/Prepare dataset (e.g. webscraping, API, etc.) 
+2. Preparing a corpus (such as converting files from PDF to plain text format)
+3. Conducting text pre-processing (removing, stopwords, tokenization, stemming, n-grams)
+4. Exploratory analysis (Word clouds, clustering)  
+5. Determining the number of topics (using perplexity, coherence, entropy, or eye-ball method)
+6. Selecting the appropriate algorithm (such as LDA, STM, CTM) 
+7. Seeding (so that one can reproduce the algorithm with the same selected
+parameters)
+8. Running the selected algorithm using proprietary or open-source tools (such
+as RapidMiner, TopicModelingTool) or programming languages (such as R or
+Python)
+9. Iterating the whole process till the algorithm fits the model
+:::
+
+## When to Use Topic Modeling
+
+:::{.incremental}
+
+- When you have a vast collection of text documents
+- When the collection belongs to a specific subject
+- When the collection has a similar type of documents, such as when all files in the collection are newspaper articles
+:::
+
+## When NOT to Use Topic Modeling
+
+:::{.incremental}
+- When you have a relatively small number of documents
+- When you do not have any idea about your collection. In this case, clustering will be a better option than using topic modeling
+- When the collection has a mixture of different types of documents, such as when the collection is composed of newspaper archives, journal articles, and ETDs
+:::
+
+## Available Tools and Packages
+::: columns
+::: {.column width="40%"}
+**Out-of-Box Tools**
+
+- [Topic Modeling Tool](https://code.google.com/archive/p/topic-modeling-tool/)
+- [RapidMiner](https://rapidminer.com/)
+- [VyontTools](https://voyant-tools.org/)
+- [DARIAH Topics Explorer](https://dariah-de.github.io/TopicsExplorer/)
+- [ORANGE](https://orangedatamining.com/)
+- [jsLDA](https://mimno.infosci.cornell.edu/jsLDA/jslda.html)
+..... (more!)
+:::
+
+
+::: {.column width="30%"}
+**R Libraries**
+
+- [quanteda](https://quanteda.io/)
+- [stm](https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf)
+- [tm](https://cran.r-project.org/web/packages/tm/tm.pdf)
+- [lda](https://cran.r-project.org/web/packages/lda/lda.pdf)
+- [topicmodels](https://cran.r-project.org/package=topicmodels)
+- [text2vec](https://cran.r-project.org/web/packages/text2vec/index.html)
+- [topicdoc](https://cran.r-project.org/web/packages/topicdoc/index.html)
+- [BTM](https://cran.r-project.org/web/packages/BTM/index.html)
+- [tidytext](https://cran.r-project.org/web/packages/tidytext/vignettes/tidytext.html)
+- [textmineR](https://cran.r-project.org/package=textmineR)
+.....(more!)
+:::
+
+
+::: {.column width="30%"}
+**Python Libraries**
+
+- [bertopic](https://pypi.org/project/bertopic/)
+- [corextopic](https://pypi.org/project/corextopic/)
+- [scikit-learn](https://pypi.org/project/scikit-learn/)
+- [corextopic](https://pypi.org/project/corextopic/)
+- [genism](https://pypi.org/project/gensim/)
+- [lda](https://pypi.org/project/lda/)
+- [tethne](https://pythonhosted.org/tethne/)
+- [dynamic_topic_modeling](https://pypi.org/project/dynamic-topic-modeling/)
+.....(more!)
+:::
+:::
+
+## Topic Visualization
+
+- Open questions: 
+
+1. How we use the output of the algorithm? 
+2. How should we visualize and navigate the topical structure? 
+3. What do the topics and document representations tell us about the texts?
+
+- Output of topic modeling is not entirely human-readable, and one way to understand the results is through visualization
+- “Topic models are meant to help interpret and understand texts, but it is still the researcher’s job to
+do the actual interpreting and understanding” (Blei, 2012)
+- "But be sure that you can understand the visualization as topic modeling tools are fallible” (Blei, 2012) 
+
+
+## Topic Visualization (Cont.)
+
+
+
+
+# Topics Evolve {background-color="#F7D9C4"}
+
+## Topic Analysis + Time
+
+:::{.incremental}
+- It assists in identifying topics within a context and how they advance in time
+- For instance, over time, few documents within a topic may initiate content that varies from the original content; If that initiated content is shared by a lot of later documents, the content is recognized as a new topic
+- Hence, with the progression of time, topics advance, new themes emerge, and old ones become obsolete
+- So, topic modeling not just helps the researchers to decide the trending topics or related fields to their field of intrigue but additionally encourages them to distinguish new concepts and fields over time
+:::
+
+# Application {background-color="#F7D9C4"}
+
+
+# Demo! {background-color="#F7D9C4"}
+
+# ![](slide1.png){fig-align="center"} {background-color="#F7D9C4"}
