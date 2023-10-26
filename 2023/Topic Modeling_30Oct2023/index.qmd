@@ -87,6 +87,43 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 :::
 
+# Introduction {background-color="#F7D9C4"}
+
+# ![](img/1.png){fig-align="center"}
+
+# ![](img/2.png){fig-align="center"}
+::: footer
+:::
+
+
+# ![](img/3.png){fig-align="center"}
+::: footer
+:::
+
+# ![](img/4.png){fig-align="center"}
+::: footer
+:::
+
+# ![](img/5.png){fig-align="center"}
+::: footer
+:::
+
+
+# Recommendations
+
+::: columns
+::: {.column width="30%"}
+![](img/6.png){fig-align="center"}
+:::
+
+::: {.column width="70%"}
+![](img/7.png){fig-align="center"}
+:::
+:::
+
+::: footer
+:::
+
 # What is Topic Modeling? {background-color="#F7D9C4"}
 
 ## Definition
@@ -129,7 +166,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 
 ![](img/works.png){fig-align="center"}
 
-## How Topic Modeling Works? (Cont.) 
+## How Topic Modeling Works? (Cont.)
 
 ![](img/works2.png){fig-align="center"}
 
