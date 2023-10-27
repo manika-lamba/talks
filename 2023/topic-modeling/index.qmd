@@ -87,7 +87,8 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 :::
 
-# Introduction {background-color="#F7D9C4"}
+# Overview {background-color="#F7D9C4"}
+
 ::: footer
 :::
 
@@ -100,30 +101,30 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 
 # Human vs Machine
 
-![](img/2.png){fig-align="center"} 
+![](img/2.png){fig-align="center"}
 
 ::: footer
 :::
 
 # Human vs Machine (Cont.)
 
-![](img/3.png){fig-align="center"} 
+![](img/3.png){fig-align="center"}
 
-::: footer 
+::: footer
 :::
 
 # Human vs Machine (Cont.)
 
-![](img/4.png){fig-align="center"} 
+![](img/4.png){fig-align="center"}
 
-::: footer 
+::: footer
 :::
 
 # Model
 
-![](img/5.png){fig-align="center"} 
+![](img/5.png){fig-align="center"}
 
-::: footer 
+::: footer
 :::
 
 # Recommendations
@@ -142,6 +143,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 
 # What is Topic Modeling? {background-color="#F7D9C4"}
+
 ::: footer
 :::
 
@@ -161,6 +163,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   It is "a method for finding and tracing clusters of words (called *topics*) in large bodies of texts" (Brett)
 -   It is a text mining approach to understand, organize, process, extract, manage, and summarize knowledge
 :::
+
 ::: footer
 :::
 
@@ -173,6 +176,69 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   It is based on statistical and machine learning techniques to mine meaningful information from a vast corpus of unstructured data and is used to mine document's content
 -   There are no machine-readable annotations that can tell the topic modeling programs about the semantic meaning of the words in the text
 :::
+
+::: footer
+:::
+
+## Some Important Concepts
+
+::: panel-tabset
+## Bags of Words
+
+![](img/11.jpg){fig-align="center" width="65%"}
+
+::: footer
+:::
+
+## TDM
+
+::: columns
+::: {.column width="65%"}
+![](img/8.jpg){fig-align="center"}
+:::
+
+::: {.column width="35%"}
+-   It represents terms as a table or matrix of numbers for a given corpus
+-   In TDM, terms are represented as rows and documents as columns for a corpus where the number of occurrences of terms in the document is entered in the boxes
+:::
+:::
+
+::: footer
+:::
+
+## DTM
+
+::: columns
+::: {.column width="65%"}
+![](img/9.jpg){fig-align="center"}
+:::
+
+::: {.column width="35%"}
+-   It represents terms as a table or matrix of numbers for a given corpus
+-   It is a transposition of TDM
+-   In DTM, each document is a row, and each word is the column
+:::
+:::
+
+::: footer
+:::
+
+## TF-IDF
+
+::: columns
+::: {.column width="65%"}
+![](img/10.jpg){fig-align="center"}
+
+It evaluates the relevancy of a term for a document in a corpus and is the most popular weighting scheme in information retrieval (IR)
+:::
+
+::: {.column width="35%"}
+-   The term **weighting** is popularly used in IR and supervised machine learning tasks like text classification
+-   It makes a list of more discriminative terms than others and assigns a weight to each highly occurring term
+:::
+:::
+:::
+
 ::: footer
 :::
 
@@ -213,7 +279,6 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 ::: footer
 :::
 
-
 ## How to DO Topic Modeling?
 
 ::: incremental
@@ -238,6 +303,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   When the collection belongs to a specific subject
 -   When the collection has a similar type of documents, such as when all files in the collection are newspaper articles
 :::
+
 ::: footer
 :::
 
@@ -248,6 +314,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   When you do not have any idea about your collection. In this case, clustering will be a better option than using topic modeling
 -   When the collection has a mixture of different types of documents, such as when the collection is composed of newspaper archives, journal articles, and ETDs
 :::
+
 ::: footer
 :::
 
@@ -293,10 +360,14 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   [dynamic_topic_modeling](https://pypi.org/project/dynamic-topic-modeling/) .....(more!)
 :::
 :::
+
 ::: footer
 :::
 
-## Topic Visualization 
+## Topic Visualization
+
+::: panel-tabset
+## Intro
 
 -   Open questions:
 
@@ -311,22 +382,57 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 ::: footer
 :::
 
+## Example 1
 
-## Topic Visualization (Cont.)
+[COVID-19 Research Dashboard](https://manika-lamba.github.io/stm/)
 
+[![Manika Lamba. (2022). Visualizing the Pace of COVID-19 Research: An Experimental Study of All India Institute of Medical Sciences (AIIMS), New Delhi. In SIS Annual Convention 2022, New Delhi, India.](img/12.png){fig-align="center" width="70%"}](https://zenodo.org/records/7191599#.Y4gj3nZBy5c)
+
+::: footer
+:::
+
+## Example 2
+
+[ETD Dashboard](https://manika-lamba.github.io/project/etds/)
+
+[![Manika Lamba and Margam Madhusudhan. (2018). Metadata Tagging of Library and Information Science Theses:Shodhganga (2013-2017). In ETD2018 Taiwan Beyond the Boundaries of Rims and Oceans:Globalizing Knowledge with ETDs. Taipei,Taiwan.](img/13.png){fig-align="center" width="55%"}](https://zenodo.org/records/1475795#.YFyWUa8zbb0)
 
 ::: footer
 :::
 
-# Case Studies {background-color="#F7D9C4"}
+## Example 3 
 
+[LDA Vis](https://textmining-infopros.github.io/chapter4/#topic=1&lambda=1&term=)
+
+![](img/16.png){fig-align="center" width="60%"}
 
 ::: footer
 :::
+
+## Example 4 
+
+![](img/14.png){fig-align="center" width="60%"}
+
+::: footer
+:::
+
+## Example 5
+
+![](img/15.png){fig-align="center" width="40%"}
+
+::: footer
+:::
+:::
+
+# Applications {background-color="#F7D9C4"}
+
+::: footer
+:::
+
 # Demo {background-color="#F7D9C4"}
 
-
 ::: footer
 :::
+
 
 # ![](slide1.png){fig-align="center"} {background-color="#F7D9C4"}
