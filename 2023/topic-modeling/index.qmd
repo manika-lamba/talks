@@ -424,7 +424,37 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 :::
 :::
 
+# Case Studies 
+
+::: panel-tabset
+
+## iArxiv
+
+
+
+::: columns
+::: {.column width="50%"}
+
+![](img/18.png){fig-align="center" width="200%"}
+:::
+
+
+::: {.column width="50%"}
+![](img/17.png){fig-align="center" width="200%"}
+:::
+:::
+
+[https://iarxiv.org/](https://iarxiv.org/)
+
+::: footer
+:::
+
+:::
+
+
 # Applications {background-color="#F7D9C4"}
+
+
 
 ::: footer
 :::
