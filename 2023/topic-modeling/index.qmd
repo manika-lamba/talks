@@ -439,8 +439,6 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 :::
 :::
 
-<https://iarxiv.org/>
-
 ::: footer
 :::
 
@@ -450,6 +448,21 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 ::: footer
 :::
+
+## COVID-19
+
+[![](img/20.webp){fig-align="center" width="80%"}](https://engineering.tableau.com/visually-exploring-the-covid-19-research-literature-6ff2f70035cb)
+
+::: footer
+:::
+
+## Topic Hex-Maps
+
+[![](img/21.png){fig-align="center" width="70%"}](https://strategicfutures.org/hexmaps/ukeutopics/2017-01/app/)
+
+::: footer
+:::
+
 :::
 
 # Applications {background-color="#F7D9C4"}
