@@ -545,6 +545,24 @@ more!
 
 ## Use Cases
 
+**1. Making Ontologies**: Mehler and Walitinger used topic modeling to build a Dewey Decimal Classification (DDC)-based topic classification model in digital libraries
+
+**2. Automatic Subject Classification**: They can be
+used in libraries to index subject terms for documents
+
+**3. Recommendation Service**: It can be used to recommend electronic resources based on the reading or search habits of the users
+
+**4. Bibliometrics**: It can be used to study evolutionary pathways, citations, and trends to explore
+different hot and cold topics of research in a particular discipline
+
+**5. Altmetrics**: It can be used to know what people are talking about your library on social media and
+what topics they care about
+
+## Use Cases (Cont.)
+
+**6. Organizatuon and Management of Reseource**: It can be used to do metadata tagging of the electronic resources, library’s database, website, and repository resources
+
+**7. Better Searching and Information Retrieval of Resources**: In digital libraries, it can help in providing a fast searching experience to users and better information retrieval of electronic resources
 
 ::: footer
 :::
