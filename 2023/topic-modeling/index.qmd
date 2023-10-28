@@ -71,6 +71,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 
 ::: columns
 ::: {.column width="50%"}
+
 ![](img/me.jpg){width="70%"}
 :::
 
