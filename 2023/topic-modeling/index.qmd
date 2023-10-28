@@ -449,6 +449,15 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 ::: footer
 :::
 
+## [CORD-19](https://strategicfutures.org/TopicMaps/COVID-19/cord19.html)
+
+![](img/19.png){fig-align="center" width="40%"}
+
+
+
+::: footer
+:::
+
 :::
 
 
