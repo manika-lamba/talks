@@ -569,7 +569,13 @@ what topics they care about
 :::
 
 
-# Demo {background-color="#F7D9C4"}
+# Class Activity {background-color="#F7D9C4"}
+
+1. Find 15-20 book reviews/journal articles/email data/twitter posts/  (Make sure they have an "Abstract/any kind of text"!)
+2. Save your data in a CSV file. 
+3. Go to [https://www.coconut-libtool.com/](https://www.coconut-libtool.com/)
+
+
 
 ::: footer
 :::
