@@ -364,6 +364,26 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 ::: footer
 :::
 
+## Algorithms
+
+-   [Latent Dirchlet Allocation, 2003](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
+
+- [Hierarchal Latent Dirichlet Allocation (hLDA), 2003](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper/2003/file/7b41bfa5085806dfa24b8c9de0ce567f-Paper.pdf)
+- [Correlated Topic Model (CTM), 2005](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper_files/paper/2005/file/9e82757e9a1c12cb710ad680db11f6f1-Paper.pdf) 
+
+- [Dynamic Topic Model (DTM), 2006](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mimno.infosci.cornell.edu/info6150/readings/dynamic_topic_models.pdf)
+
+- [Correlation Explanation (CorEx), 2016](https://arxiv.org/abs/1611.10277)
+- [Structural Topic Model (STM), 2019](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf)
+- [GuidedLDA, 2018](https://github.com/vi3k6i5/guidedlda)
+
+- [LDA2Vec, 2019](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://aclanthology.org/N19-1414.pdf)
+- [BERTopic, 2022](https://arxiv.org/abs/2203.05794)
+.
+.
+.
+more!
+
 ## Topic Visualization
 
 -   Open questions:
@@ -463,10 +483,73 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 :::
 
-# Applications {background-color="#F7D9C4"}
+# Applications in Library 
+
+:::panel-tabset
+
+## Data
+
+::: columns
+::: {.column width="50%"}
+- Topic modeling has been applied to numerous resources, such as 
+
+    - annual meetings
+    - diary
+    - clinical notes
+    - case reports
+    - newspapers
+    - journals
+    - research articles
+    - preprints
+    
+   
+    
+:::   
+    
+
+::: {.column width="50%"}
+    - patents
+    - conferences
+    - chats
+    - online reviews
+    - MOOCs
+    - call for papers
+    - social media platforms
+    - RSS feed
+    - blogs
+    - open-ended survey responses
+    - emails
+    - digital libraries’ resources
+    - smart card data
+    - EZproxy daily log files
+    - data from library mobile apps
+    - virtual libraries’ resources
+    - reference questions
+    - library databases
+    - in-house journals
+    - institutional and digital repository resources
+    - theses and dissertations
+    - WebOPACs
+    - MOOC feedback, chats, and suggestions
+    - online library chats 
+    - forums
+    - emails
+    - syllabuses
+    - library’s social media platform accounts
+    
+:::
+:::
 
 ::: footer
 :::
+
+## Use Cases
+
+
+::: footer
+:::
+:::
+
 
 # Demo {background-color="#F7D9C4"}
 
