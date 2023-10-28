@@ -87,6 +87,8 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 :::
 
+# ![](img/slide1.png){fig-align="center"} {background-color="#F7D9C4"}
+
 # Overview {background-color="#F7D9C4"}
 
 ::: footer
@@ -571,13 +573,16 @@ what topics they care about
 
 # Class Activity {background-color="#F7D9C4"}
 
-1. Find 15-20 book reviews/journal articles/email data/twitter posts/  (Make sure they have an "Abstract/any kind of text"!)
-2. Save your data in a CSV file. 
-3. Go to [https://www.coconut-libtool.com/](https://www.coconut-libtool.com/)
-
+1. Find atleast 15-20 book reviews/journal articles/email data/twitter posts, etc.  (Make sure they have an "Abstract/any kind of text"! More the data, better will be the results!)
+2. Save your results in a CSV file. 
+3. Go to [https://www.coconut-libtool.com/](https://www.coconut-libtool.com/), and choose "Topic Modeling" in the left panel
+4. Upload your file
+5. Choose the parameters of your choice and record it
+6. Save the visualization 
+7. Post your visualization, your parameters (algorithm, number of topics chosen, etc.) on the discussion board and discuss what kind of data you did topic modeling on and what does your results show
 
 
 ::: footer
 :::
 
-# ![](slide1.png){fig-align="center"} {background-color="#F7D9C4"}
+
