@@ -366,9 +366,6 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 ## Topic Visualization
 
-::: panel-tabset
-## Intro
-
 -   Open questions:
 
 1.  How we use the output of the algorithm?
@@ -382,47 +379,7 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 ::: footer
 :::
 
-## Example 1
 
-[COVID-19 Research Dashboard](https://manika-lamba.github.io/stm/)
-
-[![Manika Lamba. (2022). Visualizing the Pace of COVID-19 Research: An Experimental Study of All India Institute of Medical Sciences (AIIMS), New Delhi. In SIS Annual Convention 2022, New Delhi, India.](img/12.png){fig-align="center" width="70%"}](https://zenodo.org/records/7191599#.Y4gj3nZBy5c)
-
-::: footer
-:::
-
-## Example 2
-
-[ETD Dashboard](https://manika-lamba.github.io/project/etds/)
-
-[![Manika Lamba and Margam Madhusudhan. (2018). Metadata Tagging of Library and Information Science Theses:Shodhganga (2013-2017). In ETD2018 Taiwan Beyond the Boundaries of Rims and Oceans:Globalizing Knowledge with ETDs. Taipei,Taiwan.](img/13.png){fig-align="center" width="55%"}](https://zenodo.org/records/1475795#.YFyWUa8zbb0)
-
-::: footer
-:::
-
-## Example 3
-
-[LDA Vis](https://textmining-infopros.github.io/chapter4/#topic=1&lambda=1&term=)
-
-![](img/16.png){fig-align="center" width="60%"}
-
-::: footer
-:::
-
-## Example 4
-
-![](img/14.png){fig-align="center" width="60%"}
-
-::: footer
-:::
-
-## Example 5
-
-![](img/15.png){fig-align="center" width="40%"}
-
-::: footer
-:::
-:::
 
 # Case Studies
 
@@ -459,6 +416,47 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 ## Topic Hex-Maps
 
 [![](img/21.png){fig-align="center" width="70%"}](https://strategicfutures.org/hexmaps/ukeutopics/2017-01/app/)
+
+::: footer
+:::
+
+## COVID-19 Research
+
+[![Manika Lamba. (2022). Visualizing the Pace of COVID-19 Research: An Experimental Study of All India Institute of Medical Sciences (AIIMS), New Delhi. In SIS Annual Convention 2022, New Delhi, India.](img/12.png){fig-align="center" width="70%"}](https://manika-lamba.github.io/stm/)
+
+::: footer
+:::
+
+:::
+
+# Case Studies
+
+::: panel-tabset
+
+## ETD Dashboard
+
+[![Manika Lamba and Margam Madhusudhan. (2018). Metadata Tagging of Library and Information Science Theses:Shodhganga (2013-2017). In ETD2018 Taiwan Beyond the Boundaries of Rims and Oceans:Globalizing Knowledge with ETDs. Taipei,Taiwan.](img/13.png){fig-align="center" width="55%"}](https://manika-lamba.github.io/project/etds/)
+
+::: footer
+:::
+
+## LDA Vis 
+
+[![](img/16.png){fig-align="center" width="60%"}](https://textmining-infopros.github.io/chapter4/#topic=1&lambda=1&term=)
+
+::: footer
+:::
+
+## Bar Graph
+
+![](img/14.png){fig-align="center" width="60%"}
+
+::: footer
+:::
+
+## Correlation Vis
+
+![](img/15.png){fig-align="center" width="40%"}
 
 ::: footer
 :::
