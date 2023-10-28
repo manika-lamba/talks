@@ -15,7 +15,7 @@ chalkboard: # press the B key to toggle chalkboard
 format: 
   revealjs:
     multiplex: true
-    footer: "[manika-lamba.github.io/talks/topic-modeling]()"
+    footer: "[manika-lamba.github.io/talks/topic-modeling](https://manika-lamba.github.io/talks/2023/topic-modeling/)"
     theme: ["pp.scss"]
     slide-number: c/t
     incremental: false
