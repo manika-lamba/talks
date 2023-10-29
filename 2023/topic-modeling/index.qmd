@@ -71,7 +71,6 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 
 ::: columns
 ::: {.column width="50%"}
-
 ![](img/me.jpg){width="70%"}
 :::
 
@@ -177,7 +176,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   It makes an excellent tool for discovery and helps to uncover evidence already present in the text
 -   It has been called an act of reading tea leaves (Chang et al., 2009) or the process of highlighting words (Brett) based on their topics
 -   It is based on statistical and machine learning techniques to mine meaningful information from a vast corpus of unstructured data and is used to mine document's content
-- A subject expert is need to label the topics
+-   A subject expert is need to label the topics
 :::
 
 ::: footer
@@ -272,12 +271,10 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 ## Topic Analysis + Time
 
-
 -   It assists in identifying topics within a context and how they advance in time
 -   For instance, over time, few documents within a topic may initiate content that varies from the original content; if that initiated content is shared by a lot of later documents, the content is recognized as a new topic
 -   Hence, with the progression of time, topics advance, new themes emerge, and old ones become obsolete
 -   So, topic modeling not just helps the librarians to decide the trending topics or related fields to their field of intrigue but additionally encourages them to distinguish new concepts and fields over time
-
 
 ::: footer
 :::
@@ -371,21 +368,21 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 -   [Latent Dirchlet Allocation, 2003](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
 
-- [Hierarchal Latent Dirichlet Allocation (hLDA), 2003](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper/2003/file/7b41bfa5085806dfa24b8c9de0ce567f-Paper.pdf)
-- [Correlated Topic Model (CTM), 2005](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper_files/paper/2005/file/9e82757e9a1c12cb710ad680db11f6f1-Paper.pdf) 
+-   [Hierarchal Latent Dirichlet Allocation (hLDA), 2003](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper/2003/file/7b41bfa5085806dfa24b8c9de0ce567f-Paper.pdf)
 
-- [Dynamic Topic Model (DTM), 2006](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mimno.infosci.cornell.edu/info6150/readings/dynamic_topic_models.pdf)
+-   [Correlated Topic Model (CTM), 2005](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://proceedings.neurips.cc/paper_files/paper/2005/file/9e82757e9a1c12cb710ad680db11f6f1-Paper.pdf)
 
-- [Correlation Explanation (CorEx), 2016](https://arxiv.org/abs/1611.10277)
-- [Structural Topic Model (STM), 2019](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf)
-- [GuidedLDA, 2018](https://github.com/vi3k6i5/guidedlda)
+-   [Dynamic Topic Model (DTM), 2006](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mimno.infosci.cornell.edu/info6150/readings/dynamic_topic_models.pdf)
 
-- [LDA2Vec, 2019](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://aclanthology.org/N19-1414.pdf)
-- [BERTopic, 2022](https://arxiv.org/abs/2203.05794)
-.
-.
-.
-more!
+-   [Correlation Explanation (CorEx), 2016](https://arxiv.org/abs/1611.10277)
+
+-   [Structural Topic Model (STM), 2019](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf)
+
+-   [GuidedLDA, 2018](https://github.com/vi3k6i5/guidedlda)
+
+-   [LDA2Vec, 2019](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://aclanthology.org/N19-1414.pdf)
+
+-   [BERTopic, 2022](https://arxiv.org/abs/2203.05794) . . . more!
 
 ## Topic Visualization
 
@@ -401,8 +398,6 @@ more!
 
 ::: footer
 :::
-
-
 
 # Case Studies
 
@@ -449,13 +444,11 @@ more!
 
 ::: footer
 :::
-
 :::
 
 # Case Studies
 
 ::: panel-tabset
-
 ## ETD Dashboard
 
 [![Manika Lamba and Margam Madhusudhan. (2018). Metadata Tagging of Library and Information Science Theses:Shodhganga (2013-2017). In ETD2018 Taiwan Beyond the Boundaries of Rims and Oceans:Globalizing Knowledge with ETDs. Taipei,Taiwan.](img/13.png){fig-align="center" width="55%"}](https://manika-lamba.github.io/project/etds/)
@@ -463,7 +456,7 @@ more!
 ::: footer
 :::
 
-## LDA Vis 
+## LDA Vis
 
 [![](img/16.png){fig-align="center" width="60%"}](https://textmining-infopros.github.io/chapter4/#topic=1&lambda=1&term=)
 
@@ -483,63 +476,87 @@ more!
 
 ::: footer
 :::
-
 :::
 
-# Applications in Library 
+## Topic models do not model topics (Shadrova, 2021)
 
-:::panel-tabset
+-   It operates from
 
+    -   relevantly unrealistic assumptions
+
+    -   is non-deterministic
+
+    -   cannot effectively be validated against a reasonable number of competing models
+
+    -   does not lock into a well-defined linguistic interface
+
+    -   does not scholarly model topics in the sense of themes or content (*not true anymore - BERTopic*)
+
+## Topic models do not model topics (Shadrova, 2021)
+
+-   Features are intrinsic make interpretation of its results prone to
+
+    -   **apophenia**: human tendency to perceive random state sets of elements as meaningful patterns
+      - **confirmation bias**: human tendency to perceptually prefer patterns that are in alignment with pre-existing biases
+      
+- While partial validation of the statistical model
+is possible, a **conceptual validation** would require an extended triangulation with other methods and
+human ratings, and clarification of whether statistical distinctivity of lexical co-occurrence correlates
+with conceputal topics in any reliable way
+
+::: footer
+:::
+
+# Applications in Library
+
+::: panel-tabset
 ## Data
 
 ::: columns
 ::: {.column width="50%"}
-- Topic modeling has been applied to numerous resources, such as 
+-   Topic modeling has been applied to numerous resources, such as
 
-    - annual meetings
-    - diary
-    - clinical notes
-    - case reports
-    - newspapers
-    - journals
-    - research articles
-    - preprints
-    
-   
-    
-:::   
-    
+    -   annual meetings
+    -   diary
+    -   clinical notes
+    -   case reports
+    -   newspapers
+    -   journals
+    -   research articles
+    -   preprints
+:::
 
 ::: {.column width="50%"}
-    - patents
-    - conferences
-    - chats
-    - online reviews
-    - MOOCs
-    - call for papers
-    - social media platforms
-    - RSS feed
-    - blogs
-    - open-ended survey responses
-    - emails
-    - digital libraries’ resources
-    - smart card data
-    - EZproxy daily log files
-    - data from library mobile apps
-    - virtual libraries’ resources
-    - reference questions
-    - library databases
-    - in-house journals
-    - institutional and digital repository resources
-    - theses and dissertations
-    - WebOPACs
-    - MOOC feedback, chats, and suggestions
-    - online library chats 
-    - forums
-    - emails
-    - syllabuses
-    - library’s social media platform accounts
-    
+```         
+- patents
+- conferences
+- chats
+- online reviews
+- MOOCs
+- call for papers
+- social media platforms
+- RSS feed
+- blogs
+- open-ended survey responses
+- emails
+- digital libraries’ resources
+- smart card data
+- EZproxy daily log files
+- data from library mobile apps
+- virtual libraries’ resources
+- reference questions
+- library databases
+- in-house journals
+- institutional and digital repository resources
+- theses and dissertations
+- WebOPACs
+- MOOC feedback, chats, and suggestions
+- online library chats 
+- forums
+- emails
+- syllabuses
+- library’s social media platform accounts
+```
 :::
 :::
 
@@ -550,20 +567,17 @@ more!
 
 **1. Making Ontologies**: Mehler and Walitinger used topic modeling to build a Dewey Decimal Classification (DDC)-based topic classification model in digital libraries
 
-**2. Automatic Subject Classification**: They can be
-used in libraries to index subject terms for documents
+**2. Automatic Subject Classification**: They can be used in libraries to index subject terms for documents
 
 **3. Recommendation Service**: It can be used to recommend electronic resources based on the reading or search habits of the users
 
-**4. Bibliometrics**: It can be used to study evolutionary pathways, citations, and trends to explore
-different hot and cold topics of research in a particular discipline
+**4. Bibliometrics**: It can be used to study evolutionary pathways, citations, and trends to explore different hot and cold topics of research in a particular discipline
 
-**5. Altmetrics**: It can be used to know what people are talking about your library on social media and
-what topics they care about
+**5. Altmetrics**: It can be used to know what people are talking about your library on social media and what topics they care about
 
 ## Use Cases (Cont.)
 
-**6. Organization and Management of Resources**: It can be used to do metadata tagging of the electronic resources, library’s database, website, and repository resources
+**6. Organization and Management of Resources**: It can be used to do metadata tagging of the electronic resources, library's database, website, and repository resources
 
 **7. Better Searching and Information Retrieval of Resources**: In digital libraries, it can help in providing a fast searching experience to users and better information retrieval of electronic resources
 
@@ -571,19 +585,15 @@ what topics they care about
 :::
 :::
 
-
 # Class Activity {background-color="#F7D9C4"}
 
-1. Find atleast 15-20 book reviews/journal articles/email data/twitter posts, etc.  (Make sure they have an "Abstract/any kind of text"! More the data, better will be the results!)
-2. Save your results in a CSV file. 
-3. Go to [https://www.coconut-libtool.com/](https://www.coconut-libtool.com/), and choose "Topic Modeling" in the left panel
-4. Upload your file
-5. Choose the parameters of your choice and record it
-6. Save the visualization 
-7. Post your visualization, your parameters (algorithm, number of topics chosen, etc.) on the discussion board and discuss what kind of data you did topic modeling on and what does your results show
-
+1.  Find atleast 15-20 book reviews/journal articles/email data/twitter posts, etc. (Make sure they have an "Abstract/any kind of text"! More the data, better will be the results!)
+2.  Save your results in a CSV file.
+3.  Go to <https://www.coconut-libtool.com/>, and choose "Topic Modeling" in the left panel
+4.  Upload your file
+5.  Choose the parameters of your choice and record it
+6.  Save the visualization
+7.  Post your visualization, your parameters (algorithm, number of topics chosen, etc.) on the discussion board and discuss what kind of data you did topic modeling on and what does your results show
 
 ::: footer
 :::
-
-
