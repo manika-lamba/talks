@@ -285,9 +285,9 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 ## How to DO Topic Modeling?
 
 ::: incremental
-1.  Extract/Retrieve/Prepare dataset (e.g. webscraping, API, etc.)
+1.  Extract/Retrieve dataset (e.g. webscraping, API, etc.)
 2.  Preparing a corpus (such as converting files from PDF to plain text format)
-3.  Conducting text pre-processing (removing, stopwords, tokenization, stemming, n-grams)
+3.  Conducting text pre-processing (removing stopwords, tokenization, stemming, n-grams)
 4.  Exploratory analysis (Word clouds, clustering)\
 5.  Determining the number of topics (using perplexity, coherence, entropy, or eye-ball method)
 6.  Selecting the appropriate algorithm (such as LDA, STM, CTM)
