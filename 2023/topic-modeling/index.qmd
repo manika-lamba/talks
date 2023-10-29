@@ -87,7 +87,6 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 :::
 
-# [![](img/slide1.png){fig-align="center"}](https://textmining-infopros.github.io/project/topic-modeling/){background-color="#F7D9C4"}
 
 # Overview {background-color="#F7D9C4"}
 
@@ -584,6 +583,23 @@ with conceputal topics in any reliable way
 ::: footer
 :::
 :::
+
+# Demo{background-color="#F7D9C4"}
+
+::: columns
+::: {.column width="70%"}
+[![](img/slide1.png){fig-align="center"}](https://textmining-infopros.github.io/project/topic-modeling/)
+:::
+
+
+::: {.column width="30%"}
+[![](img/hex.png){fig-align="center"}](https://textmining-infopros.github.io/project/topic-modeling/)
+:::
+:::
+
+::: footer
+:::
+
 
 # Class Activity {background-color="#F7D9C4"}
 
