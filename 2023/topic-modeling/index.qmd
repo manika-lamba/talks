@@ -177,7 +177,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 -   It makes an excellent tool for discovery and helps to uncover evidence already present in the text
 -   It has been called an act of reading tea leaves (Chang et al., 2009) or the process of highlighting words (Brett) based on their topics
 -   It is based on statistical and machine learning techniques to mine meaningful information from a vast corpus of unstructured data and is used to mine document's content
--   There are no machine-readable annotations that can tell the topic modeling programs about the semantic meaning of the words in the text
+- A subject expert is need to label the topics
 :::
 
 ::: footer
@@ -276,7 +276,7 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 -   It assists in identifying topics within a context and how they advance in time
 -   For instance, over time, few documents within a topic may initiate content that varies from the original content; if that initiated content is shared by a lot of later documents, the content is recognized as a new topic
 -   Hence, with the progression of time, topics advance, new themes emerge, and old ones become obsolete
--   So, topic modeling not just helps the researchers to decide the trending topics or related fields to their field of intrigue but additionally encourages them to distinguish new concepts and fields over time
+-   So, topic modeling not just helps the librarians to decide the trending topics or related fields to their field of intrigue but additionally encourages them to distinguish new concepts and fields over time
 
 
 ::: footer
@@ -397,7 +397,7 @@ more!
 
 -   Output of topic modeling is not entirely human-readable, and one way to understand the results is through visualization
 -   "Topic models are meant to help interpret and understand texts, but it is still the researcher's job to do the actual interpreting and understanding" (Blei, 2012)
--   "But be sure that you can understand the visualization as topic modeling tools are fallible" (Blei, 2012)
+-   "Be sure that you can understand the visualization as topic modeling tools are fallible" (Blei, 2012)
 
 ::: footer
 :::
