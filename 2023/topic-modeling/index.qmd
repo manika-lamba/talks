@@ -87,7 +87,7 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 :::
 
-# ![](img/slide1.png){fig-align="center"} {background-color="#F7D9C4"}
+# [![](img/slide1.png){fig-align="center"}](https://textmining-infopros.github.io/project/topic-modeling/){background-color="#F7D9C4"}
 
 # Overview {background-color="#F7D9C4"}
 
