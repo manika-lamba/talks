@@ -272,12 +272,12 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 ## Topic Analysis + Time
 
-::: incremental
+
 -   It assists in identifying topics within a context and how they advance in time
--   For instance, over time, few documents within a topic may initiate content that varies from the original content; If that initiated content is shared by a lot of later documents, the content is recognized as a new topic
+-   For instance, over time, few documents within a topic may initiate content that varies from the original content; if that initiated content is shared by a lot of later documents, the content is recognized as a new topic
 -   Hence, with the progression of time, topics advance, new themes emerge, and old ones become obsolete
 -   So, topic modeling not just helps the researchers to decide the trending topics or related fields to their field of intrigue but additionally encourages them to distinguish new concepts and fields over time
-:::
+
 
 ::: footer
 :::
