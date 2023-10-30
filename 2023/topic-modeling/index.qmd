@@ -93,6 +93,40 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 ::: footer
 :::
 
+# Data
+
+::: {#fig-data layout-nrow=2}
+![](img/data.png){fig-align="center" width="45%"}
+![](img/data2.jpg){fig-align="center" width="45%"}
+
+World's Technological Capacity to Store, Communicate, and Compute Information
+:::
+
+Hilbert, M., & López, P. (2011). The World’s Technological Capacity to Store, Communicate, and Compute Information. Science, 332(6025), 60 –65. doi:10.1126/science.1200970
+
+::: footer
+:::
+
+# Digital Trace Data 
+
+::: columns
+::: {.column width="50%"}
+- Past decade has witnessed an increasingly voluminous amount of digital data that is produced on the internet which describes human behavior and other objects of scholarly inquiry
+
+- Recent decades have not only witnessed an increase in the amount of text-based data but also increased computing power which is increasingly necessary to analyze it
+
+- Together, these two shifts hold the potential to significantly expand the scope of research in many different fields
+:::
+
+
+::: {.column width="50%"}
+![](img/dtd.png){fig-align="center"}
+:::
+:::
+
+::: footer
+:::
+
 # Finding Related Material
 
 ![](img/1.png){fig-align="center"}
