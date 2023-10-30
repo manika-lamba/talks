@@ -87,7 +87,6 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 :::
 :::
 
-
 # Overview {background-color="#F7D9C4"}
 
 ::: footer
@@ -95,29 +94,27 @@ saveRDS(dl, file = "data/cran-downloads.RDS")
 
 # Data
 
-::: {#fig-data layout-nrow=2}
-![](img/data.png){fig-align="center" width="45%"}
-![](img/data2.jpg){fig-align="center" width="45%"}
+::: {#fig-data layout-nrow="2"}
+![](img/data.png){fig-align="center" width="45%"} ![](img/data2.jpg){fig-align="center" width="45%"}
 
 World's Technological Capacity to Store, Communicate, and Compute Information
 :::
 
-Hilbert, M., & López, P. (2011). The World’s Technological Capacity to Store, Communicate, and Compute Information. Science, 332(6025), 60 –65. doi:10.1126/science.1200970
+Hilbert, M., & López, P. (2011). The World's Technological Capacity to Store, Communicate, and Compute Information. Science, 332(6025), 60 --65. doi:10.1126/science.1200970
 
 ::: footer
 :::
 
-# Digital Trace Data 
+# Digital Trace Data
 
 ::: columns
 ::: {.column width="50%"}
-- Past decade has witnessed an increasingly voluminous amount of digital data that is produced on the internet which describes human behavior and other objects of scholarly inquiry
+-   Past decade has witnessed an increasingly voluminous amount of digital data that is produced on the internet which describes human behavior and other objects of scholarly inquiry
 
-- Recent decades have not only witnessed an increase in the amount of text-based data but also increased computing power which is increasingly necessary to analyze it
+-   Recent decades have not only witnessed an increase in the amount of text-based data but also increased computing power which is increasingly necessary to analyze it
 
-- Together, these two shifts hold the potential to significantly expand the scope of research in many different fields
+-   Together, these two shifts hold the potential to significantly expand the scope of research in many different fields
 :::
-
 
 ::: {.column width="50%"}
 ![](img/dtd.png){fig-align="center"}
@@ -162,20 +159,6 @@ Hilbert, M., & López, P. (2011). The World’s Technological Capacity to Store,
 ::: footer
 :::
 
-# Recommendations
-
-::: columns
-::: {.column width="30%"}
-![](img/6.png){fig-align="center"}
-:::
-
-::: {.column width="70%"}
-![](img/7.png){fig-align="center"}
-:::
-:::
-
-::: footer
-:::
 
 # What is Topic Modeling? {background-color="#F7D9C4"}
 
@@ -417,6 +400,10 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 -   [BERTopic, 2022](https://arxiv.org/abs/2203.05794) . . . more!
 
+
+::: footer
+:::
+
 ## Topic Visualization
 
 -   Open questions:
@@ -524,18 +511,18 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
     -   does not lock into a well-defined linguistic interface
 
     -   does not scholarly model topics in the sense of themes or content (*not true anymore - BERTopic*)
+    
+::: footer
+:::
 
 ## Topic models do not model topics (Shadrova, 2021)
 
 -   Features are intrinsic make interpretation of its results prone to
 
     -   **apophenia**: human tendency to perceive random state sets of elements as meaningful patterns
-      - **confirmation bias**: human tendency to perceptually prefer patterns that are in alignment with pre-existing biases
-      
-- While partial validation of the statistical model
-is possible, a **conceptual validation** would require an extended triangulation with other methods and
-human ratings, and clarification of whether statistical distinctivity of lexical co-occurrence correlates
-with conceputal topics in any reliable way
+    -   **confirmation bias**: human tendency to perceptually prefer patterns that are in alignment with pre-existing biases
+
+-   While partial validation of the statistical model is possible, a **conceptual validation** would require an extended triangulation with other methods and human ratings, and clarification of whether statistical distinctivity of lexical co-occurrence correlates with conceputal topics in any reliable way
 
 ::: footer
 :::
@@ -602,11 +589,29 @@ with conceputal topics in any reliable way
 
 **2. Automatic Subject Classification**: They can be used in libraries to index subject terms for documents
 
-**3. Recommendation Service**: It can be used to recommend electronic resources based on the reading or search habits of the users
+**3. Bibliometrics**: It can be used to study evolutionary pathways, citations, and trends to explore different hot and cold topics of research in a particular discipline
 
-**4. Bibliometrics**: It can be used to study evolutionary pathways, citations, and trends to explore different hot and cold topics of research in a particular discipline
+**4. Altmetrics**: It can be used to know what people are talking about your library on social media and what topics they care about
 
-**5. Altmetrics**: It can be used to know what people are talking about your library on social media and what topics they care about
+::: footer
+:::
+
+## Use Cases (Cont.)
+
+**5. Recommendation Service**: It can be used to recommend electronic resources based on the reading or search habits of the users
+
+::: columns
+::: {.column width="30%"}
+![](img/6.png){fig-align="center"}
+:::
+
+::: {.column width="70%"}
+![](img/7.png){fig-align="center"}
+:::
+:::
+
+::: footer
+:::
 
 ## Use Cases (Cont.)
 
@@ -618,13 +623,12 @@ with conceputal topics in any reliable way
 :::
 :::
 
-# Demo{background-color="#F7D9C4"}
+# Demo {background-color="#F7D9C4"}
 
 ::: columns
 ::: {.column width="70%"}
 [![](img/slide1.png){fig-align="center"}](https://textmining-infopros.github.io/project/topic-modeling/)
 :::
-
 
 ::: {.column width="30%"}
 [![](img/hex.png){fig-align="center"}](https://textmining-infopros.github.io/project/topic-modeling/)
@@ -633,7 +637,6 @@ with conceputal topics in any reliable way
 
 ::: footer
 :::
-
 
 # Class Activity {background-color="#F7D9C4"}
 
