@@ -67,6 +67,7 @@ dl <- cranlogs::cran_downloads("palmerpenguins",
 saveRDS(dl, file = "data/cran-downloads.RDS") 
 ```
 
+
 ## About Me
 
 ::: columns
@@ -650,3 +651,4 @@ It evaluates the relevancy of a term for a document in a corpus and is the most 
 
 ::: footer
 :::
+
